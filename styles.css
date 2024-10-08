@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    width: 360px;
+    margin-top: 175px;
+}
+
+.crypto-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.crypto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F1F1F;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #333333;
+    padding: 5px 15px 5px 5px;
+    border-radius: 50px;
+}
+
+.circle-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #111726;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-logo img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.pill span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.crypto-price {
+    margin-top: 5px;
+    color: #aaa;
+}
+
+.crypto-price, .crypto-total {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.crypto-value input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    width: 100px;
+    text-align: right;
+    outline: none;
+}
+
+.crypto-total {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.plus {
+    font-size: 30px;
+    color: #fff;
+    background-color: #1f1f1f;
+    border: 4px solid #121212;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.total-value {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #27272E;
+}
+
+#inr-value {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+#total-value {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 36px;
+    margin-top: 5px;
+    color: #DDE95A;
+    cursor: pointer;
+}
+
+.refresh-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+    color:  #1F1F1F;
+    font-size: 14px;
+    gap: 7px
+}
+
+.reset-icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+#refresh-message {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.no-arrows {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+
+/* Larger screen styles (tablets and desktops) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .crypto-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pill {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .circle-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .crypto-value input {
+        font-size: 28px;
+        width: 120px;
+    }
+
+    .crypto-total {
+        font-size: 16px;
+    }
+
+    .reset-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

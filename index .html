@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JUP SOL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/confetti/confetti-style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="crypto-box">
+                <div class="crypto-item">
+                    <!-- SOL Card -->
+                    <div class="pill-price">
+                        <div class="pill">
+                            <div class="circle-logo">
+                                <img src="/assets/solana-logo.webp" alt="SOL">
+                            </div>
+                            <span>SOL</span>
+                        </div>
+                        <div class="crypto-price" style="text-align: left;">$<span id="sol-price">...</span></div>
+                    </div>
+                    <div class="crypto-value">
+                        <input type="number" id="sol-quantity" class="no-arrows" placeholder="0" min="0">
+                        <div class="crypto-total right-align">$<span id="sol-total">...</span></div>
+                    </div>
+                </div>
+
+                <!-- <div class="plus">+</div> -->
+
+                <div class="crypto-item">
+                    <!-- JUP Card -->
+                    <div class="pill-price">
+                        <div class="pill">
+                            <div class="circle-logo">
+                                <img src="/assets/jup-logo.webp" alt="JUP">
+                            </div>
+                            <span>JUP</span>
+                        </div>
+                        <div class="crypto-price" style="text-align: left;">$<span id="jup-price">...</span></div>
+                    </div>
+                    <div class="crypto-value">
+                        <input type="number" id="jup-quantity" class="no-arrows" min="0" placeholder="0">
+                        <div class="crypto-total right-align"><span id="jup-total">...</div>
+                    </div>
+                </div>
+
+                <!-- Total Value Section -->
+                <div class="total-value" id="confetti">
+                    <span>TOTAL VALUE</span>
+                    <div><span id="total-value">...</span></div>
+                    <!-- value in inr ₹-->
+                    <!-- <div><span id="inr-value">₹0.00</span></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="refresh-section">
+            <span id="refresh-message">Price change on refresh</span>
+            <div class="reset-icon" id="reset-icon">
+                <svg width="9px" height="9px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier"
+                    stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                        <g fill="none" fill-rule="evenodd" stroke="#a3a3a3" stroke-linecap="round"
+                            stroke-linejoin="round" transform="matrix(0 1 1 0 2.5 2.5)">
+                            <path d="m3.98652376 1.07807068c-2.38377179 1.38514556-3.98652376 3.96636605-3.98652376 6.92192932 0 4.418278 3.581722 8 8 8s8-3.581722 8-8-3.581722-8-8-8"></path>
+                            <path d="m4 1v4h-4" transform="matrix(1 0 0 -1 0 6)"></path> </g>
+                        </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="/confetti/confetti-script.js"></script>
+</body>
+</html>
